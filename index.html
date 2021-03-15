@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/pattern-circles.svg" alt="pattern circles" />
+        <h1>Simple, traffic-based pricing</h1>
+        <p>
+          Sign-up for our 30-day trial. <span>No credit card required.</span>
+        </p>
+      </header>
+      <div class="card">
+        <div class="page-views">100k pageviews</div>
+        <div class="range">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="50"
+            class="range-progress"
+          />
+        </div>
+        <div class="price">
+          <span>$16</span> / <span class="month">monthly</span>
+        </div>
+        <div class="billing">
+          <span class="billing-text">Monthly Billing </span>
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox-input" />
+            <span class="checkbox-slider"></span>
+          </label>
+          <span class="billing-text">Yearly Billing </span>
+          <span class="discount">-25% <span>discount</span></span>
+        </div>
+        <ul class="list">
+          <li class="list-item">Unlimited websites</li>
+          <li class="list-item">100% data ownership</li>
+          <li class="list-item">Email reports</li>
+        </ul>
+        <button class="btn">Start my trial</button>
+      </div>
+    </div>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
